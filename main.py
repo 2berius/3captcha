@@ -7,7 +7,6 @@ from pydub import AudioSegment
 import random
 import string
 import wget
-from pydub import AudioSegment
 import os
 
 # selenium libraries
