@@ -82,8 +82,8 @@ def main():
                 driver.find_element_by_id(
                     'recaptcha-verify-button').click()
 
-            except Exception as fuck:
-                print(fuck)
+            except Exception as error:
+                print(error)
 
             finally:
                 os.remove(wavfile)
