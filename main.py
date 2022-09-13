@@ -73,12 +73,12 @@ def main():
             audio = rec.listen(src)
 
             try:
-                extracted = rec.recognize_google(audio, language='en-IN')
-                print('Extracted text: ' + extracted)
+                extracted_text = rec.recognize_google(audio, language='en-IN')
+                print('Audio to text: ' + extracted_text)
 
                 aud_elem = driver.find_element_by_id('audio-response')
                 aud_elem.clear()
-                aud_elem.send_keys(extracted)
+                aud_elem.send_keys(extracted_text)
                 driver.find_element_by_id(
                     'recaptcha-verify-button').click()
 
