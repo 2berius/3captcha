@@ -49,9 +49,8 @@ def main():
         # download audio challenge from recaptcha
         wget.download(src, out=source)
 
-        rand = 'audio' + ''.join(random.choice(string.ascii_lowercase)
-                                 for _ in range(6))
-        wavfile = rand + ".wav"
+        wavfile = "audio" + ''.join(random.choice(string.ascii_lowercase)
+                                 for _ in range(6)) + ".wav"
 
         # .mp3 to .wav conversion
         aud = AudioSegment.from_mp3(source)
