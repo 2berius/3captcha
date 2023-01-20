@@ -1,4 +1,4 @@
-# 2berius' ReCAPTCHA ducker (FINAL)
+# 2berius' ReCAPTCHA solver (FINAL)
 
 # misc
 import speech_recognition as sr
